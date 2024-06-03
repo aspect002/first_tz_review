@@ -37,23 +37,84 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 /*----------------------------------------------------------------------------------------------------------*/
+body {
+  background-color: #F0F0F0; /* Задает серый цвет фона для всей страницы */
+  margin: 0; /* Убирает стандартные отступы вокруг body */
+}
 
+.review-content {
+  display: flex; /* Создает Flex-контейнер */
+  justify-content: center; /* Центрирует содержимое по горизонтали */
+  align-items: center; /* Центрирует содержимое по вертикали */
+  padding: 40px; /* Добавляет внутренние отступы */
+  font-weight: bold; /* Задаю жирный текст внутри контейнера */
+}
 
+.review-content h2{
+  font-size:35px; /* Размер шрифта заголовка */
+  font-family:sans-serif;  /* Шрифт без засечек */
+  font-weight: 600;  /* Полужирный шрифт */
+  color: black;  /* Черный цвет текста */
 
+}
+.photo-client {
+  display: flex; /* Создает Flex-контейнер */
+  justify-content: center; /* Центрирует содержимое по горизонтали */
+  align-items: center; /* Центрирует содержимое по вертикали */
+  overflow: hidden; /* Скрывает содержимое, выходящее за границы */
+  padding: 70px
+}
 
+.photo-client img {
+  width: 200px; /* Устанавливает ширину в 200 пикселей */
+  height: 200px; /* Устанавливает высоту в 200 пикселей */
+  border-radius: 50%; /* Создает круглую форму */
+  object-fit: cover; /* Заполняет доступное пространство, сохраняя пропорции */
 
-  .photo-client {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-  }
+}
 
-  .photo-client img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.customer-review-text{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 40px;
+margin-bottom: 30px; /* Отступ ТОЛЬКО снизу блока */
+}
+
+.customer-review-text p{
+  font-size: 18px;  /* Устанавливает размер шрифта текста в 22 пикселя */
+  width: 400px;  /* Задает ширину текстового элемента в 400 пикселей */
+  line-height: 1.2; /* Устанавливает межстрочный интервал в 1.2 */
+  max-height: 2.4em;  /* Ограничивает максимальную высоту текста в 2.4 емов */
+  overflow: hidden;/* Скрывает любой текст, который выходит за пределы заданной высоты */
+  text-overflow: ellipsis; /* Заменяет скрытый текст многоточием, если он не помещается в заданную высоту */
+  text-align: center;  /* Выравнивает текст по центру по горизонтали */
+}
+
+.student-first-and-last-name{
+display:flex;
+justify-content: center;
+align-items: center;
+padding:11px;
+
+}
+.student-first-and-last-name h3{
+
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.status{
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.status p{
+  font-size: large;
+  font-family: sans-serif;
+  color: black;
+}
